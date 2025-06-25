@@ -133,5 +133,13 @@ function cursorAnimation() {
       });
     });
   });
+   document.getElementById("loginPages").addEventListener("click", function () {
+          const button = this;
+          button.classList.add("clicked");
+    
+          setTimeout(() => {
+            window.location.href = "login.html"; // Navigate to another HTML page
+          }, 100); // Wait for the animation to finish
+        });
 }
 cursorAnimation();
